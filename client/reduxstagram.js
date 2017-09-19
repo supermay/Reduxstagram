@@ -5,7 +5,7 @@ import { render } from 'react-dom';
 // import CSS --- webpack will deal with it
 import css from './styles/style.styl';
 
-import Main from './components/Main';
+import App from './components/App';
 import Single from './components/Single';
 import PhotoGrid from './components/PhotoGrid';
 
@@ -18,7 +18,7 @@ import store, { history } from './store';
 const router = (
   <Provider store={store}>
     <Router history={history}>
-      <Route path='/' components={Main}>
+      <Route path='/' components={App}>
       {/* nest routes here */}
       <IndexRoute component={PhotoGrid}></IndexRoute>
       <Route path='/view/:postId' component={Single}></Route>
