@@ -11,7 +11,7 @@ const Main = React.createClass({
           <Link to='/'>Reduxstagram</Link>
         </h1>
         {/* this will be populated by router */}
-        {/* {this.props.children} */}
+        {/* {this.props.children}, will pass all the props from state to children */}
         {React.cloneElement(this.props.children,this.props)}
       </div>
     )

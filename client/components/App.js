@@ -12,8 +12,7 @@ export function mapStateToProps(state){
 }
 
 export function mapDispatchToProps(dispatch){
-  return bindActionCreators(actionCreators,
-    dispatch);
+  return bindActionCreators(actionCreators, dispatch);
 }
 
 // take state
